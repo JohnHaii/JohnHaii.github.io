@@ -2,10 +2,8 @@
 
 
 
-  
 
-
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -98,7 +96,7 @@
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -310,66 +308,24 @@
       
         
           
-            <h1 id="web标准和html"><a href="#web标准和html" class="headerlink" title="web标准和html"></a>web标准和html</h1><p>#前端开发<br>web前段开发主要包含三个内容</p>
-<ul>
-<li>内容标准:html</li>
-<li>表现标准:css</li>
-<li>行为标准:js</li>
-</ul>
-<p>##html<br>html是超文本标记语言</p>
-<ul>
-<li>超文本：处理文字还可以标记其他内容</li>
-<li>标记语言：通过不同的标记让内容以不同的形式展示<br>####html版本<br>html5-广义：指html5+css3+js<br>####html基本结构：</li>
-<li>html 由不同的标签组成<br>1.常规标签（双标签）：<br>由开始标签和结束标签组成<br>&lt;标签名 属性1=属性值1 属性2=属性值2&gt;<br>&lt;/标签名 属性1=属性值1 属性2=属性值2&gt;<br>2.单标签：<br>没有结束标签<br>&lt;标签名&gt;或者&lt;标签名/&gt;<br>3.符号：&amp;…<br>####说明：<br>固定写法：<br>标签名:’&lt;’、’/‘’&gt;’标签由html提供，固定格式之间不能有空格<br>属性：属性之间由空格隔开<br>双标签之间的内容：可以是任何东西（文本或者其它标签）<br>####网页内容结构<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;!--上面标签指当前html版本为html5--&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;!--</span><br><span class="line">      head中主要包含：meta、tilte、link、style、script、base</span><br><span class="line">    --&gt;</span><br><span class="line">    &lt;meta charset=&apos;utf-8&apos;&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>####head中的属性</p>
-<ul>
-<li>meta: charset(设置当前页面文本编码方式)<br>####body中的标签<br>根据语义选择标签</li>
-<li><p>标题标签：h1-h6</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;&lt;/h1&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>段落标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>列表标签：</p>
-<p>1.有序列表：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
-<p>2.无序列表：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>3.自定义列表:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">  &lt;dt&gt;</span><br><span class="line">  列表标题</span><br><span class="line">  &lt;/dt&gt;</span><br><span class="line">  &lt;dd&gt;</span><br><span class="line">  列表内容</span><br><span class="line">  &lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li><p>字体标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;font&gt;&lt;/font&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>超链接</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;&quot; target=&quot;&quot;&gt;内容&lt;/a&gt;</span><br><span class="line">href=&quot;#&quot;：刷新</span><br><span class="line">href=&quot;#id（选择器）&quot;：滚动到指定位置</span><br><span class="line">target=&quot;_self（默认）&quot;在本标签打开</span><br><span class="line">target=&quot;_blank&quot;在新标签中打开</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>表格标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;table border=&quot;边框宽度&quot; bordercolor=&quot;边框颜色&quot; cellspacing=&quot;单元格间隙&quot; cellpadding=&quot;内容和边框距离&quot;&gt;</span><br><span class="line">  &lt;tr&gt;&lt;td rowspan=&quot;行合并&quot; colspan=&quot;列合并&quot;&gt;&lt;/td&gt;&lt;/tr&gt;(tr*n：n行tr标签 tab)1行1单元格</span><br><span class="line">  &lt;tr&gt;&lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br><span class="line">共同属性：</span><br><span class="line">width=&quot;宽度&quot;</span><br><span class="line">height=&quot;长度&quot;</span><br><span class="line">bgcolor=&quot;背景颜色&quot;</span><br><span class="line">align=&quot;left,right,center&quot;</span><br><span class="line">颜色:1.英文单词</span><br><span class="line">2.#+RGB16进制值</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>加粗标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;b&gt;&lt;/b&gt;</span><br><span class="line">强调语义&lt;strong&gt;&lt;/strong&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>倾斜标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;i&gt;&lt;/i&gt;</span><br><span class="line">强调语义&lt;em&gt;&lt;/em&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>图片标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;地址&quot; title=&quot;图片名&quot; alt=&quot;加载失败&quot;/&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>强制换行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;br/&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>水平线:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;hr/&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>强制空格：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(像素空格)&apos;&amp;nbsp;&apos;</span><br><span class="line">(键盘空格)&apos;&amp;emsp;&apos;</span><br></pre></td></tr></table></figure></li>
-</ul>
+          web标准和html#前端开发web前段开发主要包含三个内容
 
-          
+内容标准:html
+表现标准:css
+行为标准:js
+
+##htmlhtml是超文本标记语言
+
+超文本：处理文字还可以标记其他内容
+标记语言：通过不同的标记让内容以不同的形式展示####html版本html5-广义：指html5+css
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/21/你好 - 副本 (2)/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -487,66 +443,24 @@
       
         
           
-            <h1 id="web标准和html"><a href="#web标准和html" class="headerlink" title="web标准和html"></a>web标准和html</h1><p>#前端开发<br>web前段开发主要包含三个内容</p>
-<ul>
-<li>内容标准:html</li>
-<li>表现标准:css</li>
-<li>行为标准:js</li>
-</ul>
-<p>##html<br>html是超文本标记语言</p>
-<ul>
-<li>超文本：处理文字还可以标记其他内容</li>
-<li>标记语言：通过不同的标记让内容以不同的形式展示<br>####html版本<br>html5-广义：指html5+css3+js<br>####html基本结构：</li>
-<li>html 由不同的标签组成<br>1.常规标签（双标签）：<br>由开始标签和结束标签组成<br>&lt;标签名 属性1=属性值1 属性2=属性值2&gt;<br>&lt;/标签名 属性1=属性值1 属性2=属性值2&gt;<br>2.单标签：<br>没有结束标签<br>&lt;标签名&gt;或者&lt;标签名/&gt;<br>3.符号：&amp;…<br>####说明：<br>固定写法：<br>标签名:’&lt;’、’/‘’&gt;’标签由html提供，固定格式之间不能有空格<br>属性：属性之间由空格隔开<br>双标签之间的内容：可以是任何东西（文本或者其它标签）<br>####网页内容结构<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;!--上面标签指当前html版本为html5--&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;!--</span><br><span class="line">      head中主要包含：meta、tilte、link、style、script、base</span><br><span class="line">    --&gt;</span><br><span class="line">    &lt;meta charset=&apos;utf-8&apos;&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>####head中的属性</p>
-<ul>
-<li>meta: charset(设置当前页面文本编码方式)<br>####body中的标签<br>根据语义选择标签</li>
-<li><p>标题标签：h1-h6</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;&lt;/h1&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>段落标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>列表标签：</p>
-<p>1.有序列表：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
-<p>2.无序列表：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>3.自定义列表:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">  &lt;dt&gt;</span><br><span class="line">  列表标题</span><br><span class="line">  &lt;/dt&gt;</span><br><span class="line">  &lt;dd&gt;</span><br><span class="line">  列表内容</span><br><span class="line">  &lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li><p>字体标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;font&gt;&lt;/font&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>超链接</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;&quot; target=&quot;&quot;&gt;内容&lt;/a&gt;</span><br><span class="line">href=&quot;#&quot;：刷新</span><br><span class="line">href=&quot;#id（选择器）&quot;：滚动到指定位置</span><br><span class="line">target=&quot;_self（默认）&quot;在本标签打开</span><br><span class="line">target=&quot;_blank&quot;在新标签中打开</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>表格标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;table border=&quot;边框宽度&quot; bordercolor=&quot;边框颜色&quot; cellspacing=&quot;单元格间隙&quot; cellpadding=&quot;内容和边框距离&quot;&gt;</span><br><span class="line">  &lt;tr&gt;&lt;td rowspan=&quot;行合并&quot; colspan=&quot;列合并&quot;&gt;&lt;/td&gt;&lt;/tr&gt;(tr*n：n行tr标签 tab)1行1单元格</span><br><span class="line">  &lt;tr&gt;&lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br><span class="line">共同属性：</span><br><span class="line">width=&quot;宽度&quot;</span><br><span class="line">height=&quot;长度&quot;</span><br><span class="line">bgcolor=&quot;背景颜色&quot;</span><br><span class="line">align=&quot;left,right,center&quot;</span><br><span class="line">颜色:1.英文单词</span><br><span class="line">2.#+RGB16进制值</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>加粗标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;b&gt;&lt;/b&gt;</span><br><span class="line">强调语义&lt;strong&gt;&lt;/strong&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>倾斜标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;i&gt;&lt;/i&gt;</span><br><span class="line">强调语义&lt;em&gt;&lt;/em&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>图片标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;地址&quot; title=&quot;图片名&quot; alt=&quot;加载失败&quot;/&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>强制换行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;br/&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>水平线:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;hr/&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>强制空格：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(像素空格)&apos;&amp;nbsp;&apos;</span><br><span class="line">(键盘空格)&apos;&amp;emsp;&apos;</span><br></pre></td></tr></table></figure></li>
-</ul>
+          web标准和html#前端开发web前段开发主要包含三个内容
 
-          
+内容标准:html
+表现标准:css
+行为标准:js
+
+##htmlhtml是超文本标记语言
+
+超文本：处理文字还可以标记其他内容
+标记语言：通过不同的标记让内容以不同的形式展示####html版本html5-广义：指html5+css
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/21/你好 - 副本/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -664,66 +578,24 @@
       
         
           
-            <h1 id="web标准和html"><a href="#web标准和html" class="headerlink" title="web标准和html"></a>web标准和html</h1><p>#前端开发<br>web前段开发主要包含三个内容</p>
-<ul>
-<li>内容标准:html</li>
-<li>表现标准:css</li>
-<li>行为标准:js</li>
-</ul>
-<p>##html<br>html是超文本标记语言</p>
-<ul>
-<li>超文本：处理文字还可以标记其他内容</li>
-<li>标记语言：通过不同的标记让内容以不同的形式展示<br>####html版本<br>html5-广义：指html5+css3+js<br>####html基本结构：</li>
-<li>html 由不同的标签组成<br>1.常规标签（双标签）：<br>由开始标签和结束标签组成<br>&lt;标签名 属性1=属性值1 属性2=属性值2&gt;<br>&lt;/标签名 属性1=属性值1 属性2=属性值2&gt;<br>2.单标签：<br>没有结束标签<br>&lt;标签名&gt;或者&lt;标签名/&gt;<br>3.符号：&amp;…<br>####说明：<br>固定写法：<br>标签名:’&lt;’、’/‘’&gt;’标签由html提供，固定格式之间不能有空格<br>属性：属性之间由空格隔开<br>双标签之间的内容：可以是任何东西（文本或者其它标签）<br>####网页内容结构<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;!--上面标签指当前html版本为html5--&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;!--</span><br><span class="line">      head中主要包含：meta、tilte、link、style、script、base</span><br><span class="line">    --&gt;</span><br><span class="line">    &lt;meta charset=&apos;utf-8&apos;&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>####head中的属性</p>
-<ul>
-<li>meta: charset(设置当前页面文本编码方式)<br>####body中的标签<br>根据语义选择标签</li>
-<li><p>标题标签：h1-h6</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;&lt;/h1&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>段落标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>列表标签：</p>
-<p>1.有序列表：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
-<p>2.无序列表：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>3.自定义列表:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">  &lt;dt&gt;</span><br><span class="line">  列表标题</span><br><span class="line">  &lt;/dt&gt;</span><br><span class="line">  &lt;dd&gt;</span><br><span class="line">  列表内容</span><br><span class="line">  &lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li><p>字体标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;font&gt;&lt;/font&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>超链接</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;&quot; target=&quot;&quot;&gt;内容&lt;/a&gt;</span><br><span class="line">href=&quot;#&quot;：刷新</span><br><span class="line">href=&quot;#id（选择器）&quot;：滚动到指定位置</span><br><span class="line">target=&quot;_self（默认）&quot;在本标签打开</span><br><span class="line">target=&quot;_blank&quot;在新标签中打开</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>表格标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;table border=&quot;边框宽度&quot; bordercolor=&quot;边框颜色&quot; cellspacing=&quot;单元格间隙&quot; cellpadding=&quot;内容和边框距离&quot;&gt;</span><br><span class="line">  &lt;tr&gt;&lt;td rowspan=&quot;行合并&quot; colspan=&quot;列合并&quot;&gt;&lt;/td&gt;&lt;/tr&gt;(tr*n：n行tr标签 tab)1行1单元格</span><br><span class="line">  &lt;tr&gt;&lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br><span class="line">共同属性：</span><br><span class="line">width=&quot;宽度&quot;</span><br><span class="line">height=&quot;长度&quot;</span><br><span class="line">bgcolor=&quot;背景颜色&quot;</span><br><span class="line">align=&quot;left,right,center&quot;</span><br><span class="line">颜色:1.英文单词</span><br><span class="line">2.#+RGB16进制值</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>加粗标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;b&gt;&lt;/b&gt;</span><br><span class="line">强调语义&lt;strong&gt;&lt;/strong&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>倾斜标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;i&gt;&lt;/i&gt;</span><br><span class="line">强调语义&lt;em&gt;&lt;/em&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>图片标签：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;地址&quot; title=&quot;图片名&quot; alt=&quot;加载失败&quot;/&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>强制换行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;br/&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>水平线:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;hr/&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>强制空格：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(像素空格)&apos;&amp;nbsp;&apos;</span><br><span class="line">(键盘空格)&apos;&amp;emsp;&apos;</span><br></pre></td></tr></table></figure></li>
-</ul>
+          web标准和html#前端开发web前段开发主要包含三个内容
 
-          
+内容标准:html
+表现标准:css
+行为标准:js
+
+##htmlhtml是超文本标记语言
+
+超文本：处理文字还可以标记其他内容
+标记语言：通过不同的标记让内容以不同的形式展示####html版本html5-广义：指html5+css
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/21/你好/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
