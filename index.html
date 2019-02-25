@@ -310,12 +310,15 @@
       
         
           
-          ####插入数据
-
+          插入数据
 insert into 表名 values(值1,值2,…),（值1,值2,…）
-insert into 表名(字段1,字段2,…) values(值1,值2…),(值1,值2,…)#####值数字、“字符串”、时间#####时间函数
+insert into 表名(字段1,字段2,…) values(值1,值2…),(值1,值2,…)值
+
+数字、“字符串”、时间
+时间函数
 年月日时分秒now();
-年月日date(n
+年月日date(now())
+年、月、日y
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -441,13 +444,15 @@ insert into 表名(字段1,字段2,…) values(值1,值2…),(值1,值2,…)####
       
         
           
-          ####创建、使用、删除数据库
-
+          创建、使用、删除数据库
 create database if not exists 数据库名;
 use 数据库名;
-drop database if exists 数据库名;####添加、删除、清空表
-create table if not exists 表名（字段名 类型 约束，
- ..
+drop database if exists 数据库名;
+添加、删除、清空表
+create table if not exists 表名（
+字段名 类型 约束，
+ ...
+ id i
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -573,11 +578,14 @@ create table if not exists 表名（字段名 类型 约束，
       
         
           
-          #元祖*（tuple）不可变、有序的容器型数据类型元祖不可被修改，元素可以被修改
+          元祖*（tuple）不可变、有序的容器型数据类型元祖不可被修改，元素可以被修改
 
 tuple1=（1,2,3）
-tuple2=1,2,3####特殊的获取方式1、变量1，变量2…=元祖    –用变量完全（必须）获取元祖的值2、*变量 可以获取元祖中剩下的东西（一个新的列表）
-可以通过调整位置取相
+tuple2=1,2,3特殊的获取方式
+
+1、变量1，变量2…=元祖    –用变量完全（必须）获取元祖的值2、*变量 可以获取元祖中剩下的东西（一个新的列表）
+
+可以通过调整位置取相对位
           ...
           <!--noindex-->
           <div class="post-button text-center">

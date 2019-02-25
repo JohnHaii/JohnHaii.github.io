@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="####插入数据  insert into 表名 values(值1,值2,…),（值1,值2,…） insert into 表名(字段1,字段2,…) values(值1,值2…),(值1,值2,…)#####值数字、“字符串”、时间#####时间函数 年月日时分秒now(); 年月日date(now()) 年、月、日year(now());month(now());day(now())####">
+<meta name="description" content="插入数据 insert into 表名 values(值1,值2,…),（值1,值2,…） insert into 表名(字段1,字段2,…) values(值1,值2…),(值1,值2,…)值  数字、“字符串”、时间 时间函数 年月日时分秒now(); 年月日date(now()) 年、月、日year(now());month(now());day(now()) 删除数据 删除表中所有数据 d">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据操作">
 <meta property="og:url" content="http://yoursite.com/2019/02/25/数据操作/index.html">
 <meta property="og:site_name" content="JhonHaii&#39;sBlog">
-<meta property="og:description" content="####插入数据  insert into 表名 values(值1,值2,…),（值1,值2,…） insert into 表名(字段1,字段2,…) values(值1,值2…),(值1,值2,…)#####值数字、“字符串”、时间#####时间函数 年月日时分秒now(); 年月日date(now()) 年、月、日year(now());month(now());day(now())####">
+<meta property="og:description" content="插入数据 insert into 表名 values(值1,值2,…),（值1,值2,…） insert into 表名(字段1,字段2,…) values(值1,值2…),(值1,值2,…)值  数字、“字符串”、时间 时间函数 年月日时分秒now(); 年月日date(now()) 年、月、日year(now());month(now());day(now()) 删除数据 删除表中所有数据 d">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-25T11:29:56.891Z">
+<meta property="og:updated_time" content="2019-02-25T11:42:54.016Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据操作">
-<meta name="twitter:description" content="####插入数据  insert into 表名 values(值1,值2,…),（值1,值2,…） insert into 表名(字段1,字段2,…) values(值1,值2…),(值1,值2,…)#####值数字、“字符串”、时间#####时间函数 年月日时分秒now(); 年月日date(now()) 年、月、日year(now());month(now());day(now())####">
+<meta name="twitter:description" content="插入数据 insert into 表名 values(值1,值2,…),（值1,值2,…） insert into 表名(字段1,字段2,…) values(值1,值2…),(值1,值2,…)值  数字、“字符串”、时间 时间函数 年月日时分秒now(); 年月日date(now()) 年、月、日year(now());month(now());day(now()) 删除数据 删除表中所有数据 d">
 
 
 
@@ -309,18 +309,26 @@
       
 
       
-        <p>####插入数据</p>
-<ul>
+        <h4 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h4><ul>
 <li>insert into 表名 values(值1,值2,…),（值1,值2,…）</li>
-<li>insert into 表名(字段1,字段2,…) values(值1,值2…),(值1,值2,…)<br>#####值<br>数字、“字符串”、时间<br>#####时间函数</li>
+<li>insert into 表名(字段1,字段2,…) values(值1,值2…),(值1,值2,…)<h5 id="值"><a href="#值" class="headerlink" title="值"></a>值</h5></li>
+</ul>
+<p>数字、“字符串”、时间</p>
+<h5 id="时间函数"><a href="#时间函数" class="headerlink" title="时间函数"></a>时间函数</h5><ul>
 <li>年月日时分秒<br>now();</li>
 <li>年月日<br>date(now())</li>
-<li>年、月、日<br>year(now());<br>month(now());<br>day(now())<br>####删除数据</li>
-<li>删除表中所有数据<br> delete from 表名；</li>
-<li>删除满足条件的记录<br>delete from 表名 where 条件语句；<br>####修改</li>
-<li>修改该字段所有的值<br>update 表名 set 字段名=新值；</li>
-<li>修改满足条件的该字段的值<br>update 表名 set 字段名1=新值，字段名2=新值 where 条件语句；<br>####获取数据</li>
-<li>获取所有的数据<br>select * from 表名;</li>
+<li><p>年、月、日<br>year(now());<br>month(now());<br>day(now())</p>
+<h4 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h4></li>
+<li><p>删除表中所有数据<br> delete from 表名；</p>
+</li>
+<li><p>删除满足条件的记录<br>delete from 表名 where 条件语句；</p>
+<h4 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h4></li>
+<li><p>修改该字段所有的值<br>update 表名 set 字段名=新值；</p>
+</li>
+<li><p>修改满足条件的该字段的值<br>update 表名 set 字段名1=新值，字段名2=新值 where 条件语句；</p>
+<h4 id="获取数据"><a href="#获取数据" class="headerlink" title="获取数据"></a>获取数据</h4></li>
+<li><p>获取所有的数据<br>select * from 表名;</p>
+</li>
 <li>获取指定列的数据<br>select 字段名1，字段名2 from 表名；</li>
 <li>获取指定条件的列的数据<br>select 字段名1，字段名2 from 表名 where 条件语句；</li>
 <li>自定义列名显示<br>select 字段名1 as 新字段名1，字段2 from 表名 where 条件语句；</li>
@@ -330,8 +338,7 @@
 <li>排序<br>select <em> from 表名 order by 字段名 asc默认升序(desc降序)；<br>次级排序<br>select </em> from 表名 order by 字段名1 desc，字段名2 desc;</li>
 <li>限制指定数量条记录<br>select <em> from 表名 limit 数字；<br>跳过指定数量的记录后查询指定数量的记录<br>select </em> from 表名 limit 数字 offset 数字；</li>
 </ul>
-<p>####条件语句</p>
-<ul>
+<h4 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h4><ul>
 <li>判断相等<br> =</li>
 <li>判断不相等<br> &lt;&gt;</li>
 <li>模糊条件<br>like ‘小%_’;</li>
@@ -423,8 +430,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -468,6 +484,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#插入数据"><span class="nav-number">1.</span> <span class="nav-text">插入数据</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#值"><span class="nav-number">1.1.</span> <span class="nav-text">值</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#时间函数"><span class="nav-number">1.2.</span> <span class="nav-text">时间函数</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除数据"><span class="nav-number">2.</span> <span class="nav-text">删除数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改"><span class="nav-number">3.</span> <span class="nav-text">修改</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取数据"><span class="nav-number">4.</span> <span class="nav-text">获取数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#条件语句"><span class="nav-number">5.</span> <span class="nav-text">条件语句</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="#元祖*（tuple）不可变、有序的容器型数据类型元祖不可被修改，元素可以被修改  tuple1=（1,2,3） tuple2=1,2,3####特殊的获取方式1、变量1，变量2…=元祖    –用变量完全（必须）获取元祖的值2、*变量 可以获取元祖中剩下的东西（一个新的列表） 可以通过调整位置取相对位置剩下的值 带的变量只有一个####（list）到底是什么？####排序sorted(序列):排">
+<meta name="description" content="元祖*（tuple）不可变、有序的容器型数据类型元祖不可被修改，元素可以被修改  tuple1=（1,2,3） tuple2=1,2,3特殊的获取方式  1、变量1，变量2…=元祖    –用变量完全（必须）获取元祖的值2、*变量 可以获取元祖中剩下的东西（一个新的列表）  可以通过调整位置取相对位置剩下的值 带*的变量只有一个排序  sorted(序列):排序并产生新列表.sort():将原列表">
 <meta property="og:type" content="article">
 <meta property="og:title" content="元祖、字典、集合">
 <meta property="og:url" content="http://yoursite.com/2019/02/23/元祖、字典、集合/index.html">
 <meta property="og:site_name" content="JhonHaii&#39;sBlog">
-<meta property="og:description" content="#元祖*（tuple）不可变、有序的容器型数据类型元祖不可被修改，元素可以被修改  tuple1=（1,2,3） tuple2=1,2,3####特殊的获取方式1、变量1，变量2…=元祖    –用变量完全（必须）获取元祖的值2、*变量 可以获取元祖中剩下的东西（一个新的列表） 可以通过调整位置取相对位置剩下的值 带的变量只有一个####（list）到底是什么？####排序sorted(序列):排">
+<meta property="og:description" content="元祖*（tuple）不可变、有序的容器型数据类型元祖不可被修改，元素可以被修改  tuple1=（1,2,3） tuple2=1,2,3特殊的获取方式  1、变量1，变量2…=元祖    –用变量完全（必须）获取元祖的值2、*变量 可以获取元祖中剩下的东西（一个新的列表）  可以通过调整位置取相对位置剩下的值 带*的变量只有一个排序  sorted(序列):排序并产生新列表.sort():将原列表">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-23T03:15:05.172Z">
+<meta property="og:updated_time" content="2019-02-25T11:46:35.211Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="元祖、字典、集合">
-<meta name="twitter:description" content="#元祖*（tuple）不可变、有序的容器型数据类型元祖不可被修改，元素可以被修改  tuple1=（1,2,3） tuple2=1,2,3####特殊的获取方式1、变量1，变量2…=元祖    –用变量完全（必须）获取元祖的值2、*变量 可以获取元祖中剩下的东西（一个新的列表） 可以通过调整位置取相对位置剩下的值 带的变量只有一个####（list）到底是什么？####排序sorted(序列):排">
+<meta name="twitter:description" content="元祖*（tuple）不可变、有序的容器型数据类型元祖不可被修改，元素可以被修改  tuple1=（1,2,3） tuple2=1,2,3特殊的获取方式  1、变量1，变量2…=元祖    –用变量完全（必须）获取元祖的值2、*变量 可以获取元祖中剩下的东西（一个新的列表）  可以通过调整位置取相对位置剩下的值 带*的变量只有一个排序  sorted(序列):排序并产生新列表.sort():将原列表">
 
 
 
@@ -309,36 +309,74 @@
       
 
       
-        <p>#元祖*（tuple）<br>不可变、有序的容器型数据类型<br>元祖不可被修改，元素可以被修改</p>
+        <h1 id="元祖-（tuple）"><a href="#元祖-（tuple）" class="headerlink" title="元祖*（tuple）"></a>元祖*（tuple）</h1><p>不可变、有序的容器型数据类型<br>元祖不可被修改，元素可以被修改</p>
 <ul>
 <li>tuple1=（1,2,3）</li>
-<li>tuple2=1,2,3<br>####特殊的获取方式<br>1、变量1，变量2…=元祖    –用变量完全（必须）获取元祖的值<br>2、*变量 可以获取元祖中剩下的东西（一个新的列表）</li>
+<li>tuple2=1,2,3<h4 id="特殊的获取方式"><a href="#特殊的获取方式" class="headerlink" title="特殊的获取方式"></a>特殊的获取方式</h4></li>
+</ul>
+<p>1、变量1，变量2…=元祖    –用变量完全（必须）获取元祖的值<br>2、*变量 可以获取元祖中剩下的东西（一个新的列表）</p>
+<ul>
 <li>可以通过调整位置取相对位置剩下的值</li>
-<li>带<em>的变量只有一个<br>####（</em>list）到底是什么？<br>####排序<br>sorted(序列):排序并产生新列表<br>.sort():将原列表排序，所以  元祖.sort()=None<br>####join的使用<br>字符串.join(序列)</li>
-<li>将序列中的字符串取出并用指定的字符串链接<br>####str(m)<br>转换字符串的本质是给m加上””</li>
-<li>或者’’?<br>#字典(dict)<br>可变、无序的容器型数据类型<br>{key1:value1,key2:value2…}<br>键（key）：必须是不可变且唯一的（一般是字符串）</li>
-<li>如果键可变 会报错<br>*如果键不唯一 后面的数据覆盖前面的数据<br>###查<br>1.dict[key]<br>2.dict.get(key)</li>
-<li>key不存在不会报错，并取一个默认值none<br>3.dic.get(key,a)<br><em>key不存在是，取值a<br>###增加和修改<br>dict[key]=a
-</em>添加key:a或者修改key:a<br>###删除<br>1.del dict[key]  删除key:a<br>2.dict.pop 删除key:a并返回a<br>##循环与字典<br>1.for key in dict:<br>2.for value in dic.values:<br>3.for key,value in dict.items()s:</li>
+<li>带*的变量只有一个<h4 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h4></li>
+</ul>
+<p>sorted(序列):排序并产生新列表<br>.sort():将原列表排序，所以  元祖.sort()=None</p>
+<h4 id="join的使用"><a href="#join的使用" class="headerlink" title="join的使用"></a>join的使用</h4><p>字符串.join(序列)</p>
+<ul>
+<li>将序列中的字符串取出并用指定的字符串链接<h4 id="str-m"><a href="#str-m" class="headerlink" title="str(m)"></a>str(m)</h4></li>
+</ul>
+<p>转换字符串的本质是给m加上””</p>
+<ul>
+<li>或者’’?<h1 id="字典-dict"><a href="#字典-dict" class="headerlink" title="字典(dict)"></a>字典(dict)</h1></li>
+</ul>
+<p>可变、无序的容器型数据类型<br>{key1:value1,key2:value2…}<br>键（key）：必须是不可变且唯一的（一般是字符串）</p>
+<ul>
+<li>如果键可变 会报错<br>*如果键不唯一 后面的数据覆盖前面的数据<h3 id="查"><a href="#查" class="headerlink" title="查"></a>查</h3></li>
+</ul>
+<p>1.dict[key]<br>2.dict.get(key)</p>
+<ul>
+<li>key不存在不会报错，并取一个默认值none<br>3.dic.get(key,a)<br>*key不存在是，取值a<h3 id="增加和修改"><a href="#增加和修改" class="headerlink" title="增加和修改"></a>增加和修改</h3></li>
+</ul>
+<p>dict[key]=a<br>*添加key:a或者修改key:a</p>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>1.del dict[key]  删除key:a<br>2.dict.pop 删除key:a并返回a</p>
+<h1 id="循环与字典"><a href="#循环与字典" class="headerlink" title="循环与字典"></a>循环与字典</h1><p>1.for key in dict:<br>2.for value in dic.values:<br>3.for key,value in dict.items()s:</p>
+<ul>
 <li>本质：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ict1=&#123;&apos;a&apos;:100,&apos;b&apos;:200,&apos;c&apos;:300&#125;</span><br><span class="line">items=[]</span><br><span class="line">for key in dict1:</span><br><span class="line">    items.append((key,dict1[key]))</span><br><span class="line">for key,value in items:</span><br><span class="line">    print(key,value)</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>不推荐使用（运行效率低）</p>
-<p>####运算和方法<br>1.dict1==dict2(不看顺序，因为dict无序)<br>不支持&gt;和&lt;<br>2.in/not in<br>  只支持Key不支持value<br>3.max(),min()<br>求Key<br>4.sum()<br>求key（数字）的和</p>
-<p>####转换<br>1.dict(数据)<br>*将数据转换为字典，要求数据是具有两个元素的序列<br>2.将字典转换位其它序列，只取key值。</p>
-<p>####dict.fromkeys(序列，值) </p>
-<ul>
+<h4 id="运算和方法"><a href="#运算和方法" class="headerlink" title="运算和方法"></a>运算和方法</h4><p>1.dict1==dict2(不看顺序，因为dict无序)<br>不支持&gt;和&lt;<br>2.in/not in<br>  只支持Key不支持value<br>3.max(),min()<br>求Key<br>4.sum()<br>求key（数字）的和</p>
+<h4 id="转换"><a href="#转换" class="headerlink" title="转换"></a>转换</h4><p>1.dict(数据)<br>*将数据转换为字典，要求数据是具有两个元素的序列<br>2.将字典转换位其它序列，只取key值。</p>
+<h4 id="dict-fromkeys-序列，值"><a href="#dict-fromkeys-序列，值" class="headerlink" title="dict.fromkeys(序列，值)"></a>dict.fromkeys(序列，值)</h4><ul>
 <li>以序列中所有的元素为key,值为value创建一个新字典</li>
 <li>dict.keys()<br>取出key创建一个序列</li>
 <li>dict.values()<br>取出value创建一个序列</li>
-<li>dict.items()<br>取出key和value创建一个元祖，再将所有元祖创建一个序列<br>####dict.setfault(key,value=a)</li>
-<li>当 key 不存在时 ，添加 key:a<br>####dict1.update.dict2</li>
-<li>使用dict2中的key:value更新（修改或添加）dict1<br>#集合<br>可变，无序；元素是唯一并且不可变(暂时不能是列表、字典、集合)<br>集合可以被修改，元素不能被修改<br>###<br>{元素1，元素2，元素3…}<br>###<br>m={} 空的dict<br>n=set()空的set<br>###<br>set(list)可以去掉list中重复的数<br>####查</li>
-<li>集合不能单独获取，只能遍历（for n in set）<br>####增</li>
-<li>set.add(元素)</li>
-<li>set.update(序列) 将序列中的元素添加到集合中<br>####删</li>
-<li>set.remove(元素) 删除指定元素<br>####数学集合运算</li>
-<li>交集（&amp;）<br>两个集合公共的元素产生一个新的集合</li>
+<li><p>dict.items()<br>取出key和value创建一个元祖，再将所有元祖创建一个序列</p>
+<h4 id="dict-setfault-key-value-a"><a href="#dict-setfault-key-value-a" class="headerlink" title="dict.setfault(key,value=a)"></a>dict.setfault(key,value=a)</h4></li>
+<li><p>当 key 不存在时 ，添加 key:a</p>
+<h4 id="dict1-update-dict2"><a href="#dict1-update-dict2" class="headerlink" title="dict1.update.dict2"></a>dict1.update.dict2</h4></li>
+<li><p>使用dict2中的key:value更新（修改或添加）dict1</p>
+<h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1></li>
+</ul>
+<p>可变，无序；元素是唯一并且不可变(暂时不能是列表、字典、集合)<br>集合可以被修改，元素不能被修改</p>
+<ul>
+<li><p>{元素1，元素2，元素3…}</p>
+</li>
+<li><p>m={} 空的dict<br>n=set()空的set</p>
+</li>
+<li><p>set(list)可以去掉list中重复的数</p>
+</li>
+</ul>
+<h4 id="查-1"><a href="#查-1" class="headerlink" title="查"></a>查</h4><ul>
+<li><p>集合不能单独获取，只能遍历（for n in set）</p>
+<h4 id="增"><a href="#增" class="headerlink" title="增"></a>增</h4></li>
+<li><p>set.add(元素)</p>
+</li>
+<li><p>set.update(序列) 将序列中的元素添加到集合中</p>
+<h4 id="删"><a href="#删" class="headerlink" title="删"></a>删</h4></li>
+<li><p>set.remove(元素) 删除指定元素</p>
+<h4 id="数学集合运算"><a href="#数学集合运算" class="headerlink" title="数学集合运算"></a>数学集合运算</h4></li>
+<li><p>交集（&amp;）<br>两个集合公共的元素产生一个新的集合</p>
+</li>
 <li>并集（|）<br>两个集合所有元素产生一个新的集合</li>
 <li>差集（-）集合1-集合2<br>集合1去掉集合(1&amp;2)产生的新的集合</li>
 <li>补集（^）<br>去掉公共部分，剩下的所有元素产生一个新的集合</li>
@@ -432,8 +470,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -477,6 +524,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#元祖-（tuple）"><span class="nav-number">1.</span> <span class="nav-text">元祖*（tuple）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#特殊的获取方式"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">特殊的获取方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#排序"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#join的使用"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">join的使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-m"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">str(m)</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#字典-dict"><span class="nav-number">2.</span> <span class="nav-text">字典(dict)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#查"><span class="nav-number">2.0.1.</span> <span class="nav-text">查</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#增加和修改"><span class="nav-number">2.0.2.</span> <span class="nav-text">增加和修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除"><span class="nav-number">2.0.3.</span> <span class="nav-text">删除</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#循环与字典"><span class="nav-number">3.</span> <span class="nav-text">循环与字典</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#运算和方法"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">运算和方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#转换"><span class="nav-number">3.0.0.2.</span> <span class="nav-text">转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#dict-fromkeys-序列，值"><span class="nav-number">3.0.0.3.</span> <span class="nav-text">dict.fromkeys(序列，值)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#dict-setfault-key-value-a"><span class="nav-number">3.0.0.4.</span> <span class="nav-text">dict.setfault(key,value=a)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#dict1-update-dict2"><span class="nav-number">3.0.0.5.</span> <span class="nav-text">dict1.update.dict2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#集合"><span class="nav-number">4.</span> <span class="nav-text">集合</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#查-1"><span class="nav-number">4.0.0.1.</span> <span class="nav-text">查</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#增"><span class="nav-number">4.0.0.2.</span> <span class="nav-text">增</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删"><span class="nav-number">4.0.0.3.</span> <span class="nav-text">删</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数学集合运算"><span class="nav-number">4.0.0.4.</span> <span class="nav-text">数学集合运算</span></a></li></ol></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
